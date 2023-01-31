@@ -1,7 +1,7 @@
 ## Запуск приложения
 
 1. Скачать Docker Desktop по ссылке https://docs.docker.com/desktop/
-2. Установать Docker Desktop
+2. Установить Docker Desktop
 3. Запустить Docker Desktop
 4. Создать клон репозитория или скачать архив https://github.com/Mari14460/Diploma-Project
 5. Открыть проект в IntelliJ IDEA
