@@ -29,11 +29,23 @@ public class DataHelper {
         int month = new Random().nextInt(12) + 1;
         return String.format("%02d", month);
     }
+    public static String getInvalidMonth00() {
+        return "00";
+    }
+    public static String getInvalidMonth13() {
+        return "13";
+    }
     //endregion
 
     //region YEAR generator
     public static String getValidYear() {
         return LocalDate.now().plusYears(new Random().nextInt(4) + 1).format(DateTimeFormatter.ofPattern("yy"));
+    }
+    public static String getInvalidPreviousYear() {
+        return LocalDate.now().plusYears( - 1).format(DateTimeFormatter.ofPattern("yy"));
+    }
+    public static String getInvalidFutureYear() {
+        return LocalDate.now().plusYears( 6).format(DateTimeFormatter.ofPattern("yy"));
     }
     //endregion
 
@@ -48,12 +60,12 @@ public class DataHelper {
         return faker.name().firstName() + " " + faker.name().lastName();
     }
 
-    public static String getSymbolsOwner() {
+    public static String getInvalidSymbolsOwner() {
         Faker faker = new Faker(new Locale("ru"));
         return faker.name().firstName() + "$#@" + " " + faker.name().lastName() + "&*(";
     }
 
-    public static String getNumberOwner() {
+    public static String getInvalidNumberOwner() {
         Faker faker = new Faker(new Locale("ru"));
         return faker.name().firstName() + "123" + " " + faker.name().lastName() + "456";
     }
@@ -61,18 +73,18 @@ public class DataHelper {
 
     //region CVC generator
     public static String getValidCVC()  {
-        int cVC = new Random().nextInt(1000);
-        return String.format("%03d", cVC);
+        int cvc = new Random().nextInt(1000);
+        return String.format("%03d", cvc);
     }
 
     public static String getIncompleteCVC2()  {
-        int cVC = new Random().nextInt(100);
-        return String.format("%02d", cVC);
+        int cvc = new Random().nextInt(100);
+        return String.format("%02d", cvc);
     }
 
     public static String getIncompleteCVC1()  {
-        int cVC = new Random().nextInt(10);
-        return String.format("%01d", cVC);
+        int cvc = new Random().nextInt(10);
+        return String.format("%01d", cvc);
     }
     //endregion
 }
