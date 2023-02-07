@@ -14,7 +14,7 @@ public class AqaShopFieldsTest {
     @BeforeEach
     void setupTest() {open("http://localhost:8080");}
 
-    //region All Field Test
+    //region All Fields Test
     @DisplayName("Should Show Mandatory Field messages for All Fields when empty")
     @Test
     void shouldShowMandatoryFieldAllFields() {
@@ -90,7 +90,7 @@ public class AqaShopFieldsTest {
         paymentPage.checkMessageExpiredYear();
     }
 
-    @DisplayName("Should Show Card Expired message for YEAR > current + 6")
+    @DisplayName("Should Show Card Wrong Year message for YEAR > current + 6")
     @Test
     void shouldShowWrongYear() {
         var dashboardPage = new DashboardPage();
