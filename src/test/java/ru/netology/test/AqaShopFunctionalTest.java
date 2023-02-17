@@ -53,7 +53,7 @@ public class AqaShopFunctionalTest {
         var dashboardPage = new DashboardPage();
         dashboardPage.shouldPayWithCard();
         var paymentPage = new PaymentPage();
-        paymentPage.fillCardNumber(DataHelper.getDeclinedCard());
+        paymentPage.fillCardNumber(DataHelper.getInvalidCard());
         paymentPage.fillMonth(DataHelper.getValidMonth());
         paymentPage.fillYear(DataHelper.getValidYear());
         paymentPage.fillOwner(DataHelper.getValidOwner());

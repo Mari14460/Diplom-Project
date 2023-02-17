@@ -12,15 +12,33 @@
 docker-compose up
 ```
 9. Открыть новую вкладку терминала в IntelliJ IDEA
-10. Для тестирования с MySQL DB запустить команду в терминале
+10. Для тестирования с **MySQL DB** запустить команду в терминале
 ```
 java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -Dspring.datasource.username=app -Dspring.datasource.password=pass -jar aqa-shop.jar
 ```
-11. Для тестирования с PostgreSQL DB запустить команду в терминале
+Запуск тестов (в новой вкладке терминала):
+```
+./gradlew test -Ddatasource.url=jdbc:mysql://localhost:3306/app -Ddatasource.username=app -Ddatasource.password=pass
+```
+Создание и просмотр отчета:
+```
+./gradlew allureServe
+```
+
+11. Для тестирования с **PostgreSQL** DB запустить команду в терминале
 ```
 java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -Dspring.datasource.username=app -Dspring.datasource.password=pass -jar aqa-shop.jar
 ```
-12. SUT должен работать по адресу в браузере:
+Запуск тестов (в новой вкладке терминала):
+```
+./gradlew test -Ddatasource.url=jdbc:postgresql://localhost:5432/app -Ddatasource.username=app -Ddatasource.password=pass
+```
+Создание и просмотр отчета:
+```
+./gradlew allureServe
+```
+12. SUT работает по адресу в браузере:
 ```
 http://localhost:8080/
 ```
+

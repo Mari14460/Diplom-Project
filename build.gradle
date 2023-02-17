@@ -34,7 +34,8 @@ dependencies {
 test {
     useJUnitPlatform()
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
-    systemProperty 'datasource.url', System.getProperty('datasource.url', "jdbc:mysql://localhost:3306/app")
+    //systemProperty 'datasource.url', System.getProperty('datasource.url', "jdbc:mysql://localhost:3306/app") //Uncomment this to test with mySQL from IntelliJ
+    systemProperty 'datasource.url', System.getProperty('datasource.url', "jdbc:postgresql://localhost:5432/app") //Uncomment this to test with PostgreSQL from IntelliJ
     systemProperty 'datasource.username', System.getProperty('datasource.username', "app")
     systemProperty 'datasource.password', System.getProperty('datasource.password', "pass")
 }

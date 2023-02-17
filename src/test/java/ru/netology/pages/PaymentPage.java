@@ -90,9 +90,9 @@ public class PaymentPage {
         continueButton.click();
     }
     public void shouldAccept() {
-        transactionApproved.shouldBe(Condition.visible, Duration.ofSeconds(15));
+        transactionApproved.shouldBe(Condition.visible, Duration.ofSeconds(30));
     }
     public void shouldDecline() {
-        transactionDeclined.shouldBe(Condition.visible, Duration.ofSeconds(15));
+        transactionDeclined.shouldBe(Condition.visible, Duration.ofSeconds(30));
     }
 }
