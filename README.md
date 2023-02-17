@@ -12,11 +12,15 @@
 docker-compose up
 ```
 9. Открыть новую вкладку терминала в IntelliJ IDEA
-10. Запустить команду в терминале
+10. Для тестирования с MySQL DB запустить команду в терминале
 ```
-java -jar aqa-shop.jar
+java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -Dspring.datasource.username=app -Dspring.datasource.password=pass -jar aqa-shop.jar
 ```
-11. SUT должен работать по адресу в браузере:
+11. Для тестирования с PostgreSQL DB запустить команду в терминале
+```
+java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -Dspring.datasource.username=app -Dspring.datasource.password=pass -jar aqa-shop.jar
+```
+12. SUT должен работать по адресу в браузере:
 ```
 http://localhost:8080/
 ```

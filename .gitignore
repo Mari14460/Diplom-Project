@@ -2,6 +2,7 @@ Thumbs.db*
 .DS_Store
 **/.DS_Store
 HELP.md
+RUN.md
 .gradle
 build/
 
