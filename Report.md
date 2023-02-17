@@ -10,10 +10,12 @@
 
 #### При подключении к БД MySQL
 
+<img width="2240" alt="Снимок экрана 2023-02-16 в 21 47 03" src="https://user-images.githubusercontent.com/112805255/219546748-46e192f0-ce29-41e7-abff-dcf2d91d3ec7.png">
 
 
 #### При подключении к БД PostgreSQL
 
+<img width="2240" alt="Снимок экрана 2023-02-16 в 21 53 23" src="https://user-images.githubusercontent.com/112805255/219546767-1a7ead21-8a98-43aa-bd8c-6bdfc53140cf.png">
 
 
 ### Рекомендации
