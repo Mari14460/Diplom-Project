@@ -78,7 +78,7 @@ public class DBHelper {
     }
 
     public static String getTransactionIDCredit() {
-        var sql = "SELECT id FROM credit_request_entity";
+        var sql = "SELECT bank_id FROM credit_request_entity";
         try {
             var connection = getConnection();
             var transactionID = runner.query(connection, sql, new ScalarHandler<String>());

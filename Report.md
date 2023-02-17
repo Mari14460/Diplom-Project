@@ -20,7 +20,7 @@
     * https://github.com/Mari14460/Diploma-Project/issues/5
     * https://github.com/Mari14460/Diploma-Project/issues/6
 2. Критическая ошибка в записи в базу данных
-    * 
+    * https://github.com/Mari14460/Diploma-Project/issues/7
 3. Большое количество неверной валидации полей в UI, на обеих формах "Оплата по карте" и "Кредит по данным карты"
     * https://github.com/Mari14460/Diploma-Project/issues/3
 4. Визуальные и орфографические ошибки 
