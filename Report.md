@@ -8,12 +8,11 @@
 
 #### Отчет при подключении к БД MySQL
 
-<img width="2240" alt="Снимок экрана 2023-02-16 в 21 47 03" src="https://user-images.githubusercontent.com/112805255/219546748-46e192f0-ce29-41e7-abff-dcf2d91d3ec7.png">
-
+<img width="1217" alt="Снимок экрана 2023-02-16 в 23 25 57" src="https://user-images.githubusercontent.com/112805255/219560194-157a3ddd-cb7c-4dda-b3c8-3c71e6d78ed9.png">
 
 #### Отчет при подключении к БД
 
-<img width="2240" alt="Снимок экрана 2023-02-16 в 21 53 23" src="https://user-images.githubusercontent.com/112805255/219546767-1a7ead21-8a98-43aa-bd8c-6bdfc53140cf.png">
+<img width="1228" alt="Снимок экрана 2023-02-16 в 23 43 19" src="https://user-images.githubusercontent.com/112805255/219560237-9565e1f8-1a3e-4dae-81da-db31a3c72026.png">
 
 ### Рекомендации
 
